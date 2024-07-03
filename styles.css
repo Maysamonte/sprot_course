@@ -99,19 +99,12 @@
 @media (max-width: 767px) {
     /* Adjust the layout for smaller screens */
     .container {
-        display: flex;
-        flex-direction: column;
+
+    max-width: 100%; /* Allow the container to occupy the full width */
+    padding: 0 10px; /* Add some padding to the sides */
+  }
     }
-    .lists {
-        order: 2;
-    }
-    .video {
-        order: 1;
-    }
-    .quiz-container {
-        order: 3;
-    }
-}
+
 
   body {
     margin: 0;
