@@ -97,11 +97,26 @@
   }
 
 @media (max-width: 767px) {
-    /* Adjust the layout for smaller screens */
-    .container {
-
-    max-width: 100%; /* Allow the container to occupy the full width */
-    padding: 0 10px; /* Add some padding to the sides */
+  .lists,
+  .video,
+  .quiz-container,
+  .map-container {
+    display: none;
+  }
+  .container {
+    padding: 10px;
+  }
+  .course-menu {
+    display: block;
+    text-align: center;
+  }
+  .list1,
+  .list2 {
+    display: block;
+  }
+  .toggle-button {
+    display: block;
+    margin: 0 auto;
   }
     }
 
