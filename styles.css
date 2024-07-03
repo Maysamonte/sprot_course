@@ -1,0 +1,507 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    
+    .header-icon {
+      max-width: 200px;
+    }
+  
+   
+    body {
+      padding-top: 40px;
+    }
+  
+ 
+    .lists {
+      width: 30%;
+    }
+  
+ 
+    .lists ul li {
+      font-size: 18px;
+    }
+  
+  
+    .video-container {
+      max-width: 70%;
+    }
+  
+  
+    .quiz-container {
+      max-width: 70%;
+    }
+  
+   
+    .map-container {
+      max-width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+   
+    .mapButns {
+      margin: 15px;
+      font-size: 16px;
+    }
+  }
+
+  /* Tablet styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+   
+    .header-icon {
+      max-width: 150px;
+    }
+  
+  
+    body {
+      padding-top: 30px;
+    }
+  
+
+    .lists {
+      width: 40%;
+    }
+  
+
+    .lists ul li {
+      font-size: 16px;
+    }
+  
+
+    .video-container {
+      max-width: 60%;
+    }
+  
+
+    .quiz-container {
+      max-width: 60%;
+    }
+  
+
+    .map-container {
+      max-width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+
+    .mapButns {
+      margin: 10px;
+      font-size: 14px;
+    }
+  }
+
+/* Mobile styles */
+@media (max-width: 767px) {
+
+    .header-icon {
+      max-width: 100px;
+    }
+  
+
+    body {
+      padding-top: 20px;
+    }
+
+    .lists {
+      width: 100%;
+    }
+  
+ 
+    .lists ul li {
+      font-size: 14px;
+    }
+  
+
+    .video-container {
+      max-width: 100%;
+    }
+  
+
+    .quiz-container {
+      max-width: 100%;
+    }
+  
+
+    .map-container {
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+
+    .mapButns {
+      margin: 5px;
+      font-size: 12px;
+    }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+  
+
+.header-icon {
+    position: absolute;
+    top: 10px;
+    
+    right: 15px;
+    width: 70px;
+    height: 65px;
+}
+
+#welcome{
+    font-size: 30px;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+
+.quiz-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+    flex-basis: 100%;
+    margin-right: 20%;
+    position: fixed;
+    top: 120px;
+    left: 550px;
+    width: 40%;
+    height: auto;
+    z-index: 1000;
+    display: block;
+
+
+
+}
+
+
+.quiz-header {
+    padding: 4rem;
+
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+h2 .coursess {
+    text-align: center;
+}
+
+.lists {
+    width: 100%;
+    flex-basis: 30%;
+    min-width: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: calc(150vh - 40px);
+    /* Add this line */
+    white-space: normal;
+
+}
+.lists ul li {
+    font-size: 18px;
+  }
+
+
+
+.lists ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.list1 li {
+
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 12, 12);
+    border: none;
+    display: block;
+    width: 100%;
+    /* Adjusted width from 50% to 100% */
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+}
+
+.list2 li {
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 12, 12);
+    border: none;
+    display: block;
+    width: 100%;
+    /* Adjusted width from 50% to 100% */
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+}
+
+.list2 li:hover {
+    background-color: rgb(2, 2, 24);
+    color: white;
+}
+
+.list1 li:hover {
+    background-color: rgb(2, 2, 24);
+    color: white;
+}
+
+.lists li {
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.toggle-button {
+    margin-bottom: 10px;
+}
+
+.video {
+    position: fixed;
+    top: 120px;
+    left: 500px;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    display: block;
+}
+
+.video-container {
+    display: none;
+    max-width: 100%;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+img.toggle-button {
+    
+    color: aliceblue;
+    border: none;
+    display:block;
+    width: 15%;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin-top: 50px;
+    
+
+}
+
+.course-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 75px;
+    
+
+  }
+  
+  .course-menu h2 {
+    margin: 0;
+  }
+
+button {
+    background-color: rgb(2, 2, 24);
+    color: aliceblue;
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 1.3rem;
+}
+
+button:hover {
+    background-color: rgb(1, 1, 8);
+
+}
+
+.continue-button {
+
+    background-color: rgb(255, 255, 255);
+
+    color: rgb(1, 1, 8);
+
+    border: none;
+
+    padding: 1px 40px 1px 40px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    display: inline-block;
+    font-size: 10px;
+
+    cursor: pointer;
+    position: fixed;
+
+    bottom: 10px;
+
+    right: 30px;
+    z-index: 2;
+
+
+}
+
+.map-container {
+    
+    position: absolute;
+    top: 90px;
+    left: 500px;
+    z-index: 1000;
+    display: block;
+    overflow: visible;
+    z-index: 1;
+
+}
+.map-container .mButns{
+    
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 2px;
+}
+.mapButns{
+    background-color: rgb(2, 2, 24);
+    color: aliceblue;
+    width: 160px;
+    height: 30px;
+    text-align: center; 
+    font-size: 14px;
+    margin: 10px;
+    justify-content: center;
+    
+    
+
+}
+
+#redB:hover{
+    background-color: rgb(245, 38, 38);
+    color: white;
+}
+
+#bluB:hover{
+    background-color: rgb(70, 70, 252);
+    color: white;
+}
+
+#yelB:hover{
+    background-color: rgb(230, 230, 63);
+    color: white;
+}
+
+#allB:hover{
+    background-color: gray;
+    color: white;
+}
+
+#redpin1{
+    width: 30px;
+    height: 30px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 80px;
+    
+    
+}
+.redpin{
+    display: none;
+}
+
+.bluepin{
+    display: none;
+}
+.yellowpin{
+    display: none;
+}
+
+#redpin2{
+    width: 30px;
+    height: 30px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 50px;
+    
+    
+}
+
+#bluepin1{
+    width: 30px;
+    height: 30px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 90px;
+}
+
+#bluepin2{
+    width: 30px;
+    height: 30px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 160px;
+}
+
+#yellowpin1{
+    width: 30px;
+    height: 30px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 200px;
+}
+
+#yellowpin2{
+    width: 30px;
+    height: 30px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 230px;
+}
+
+
+
+
+
+.continue-button:hover {
+    background-color: rgb(1, 1, 8);
+    color: #ffffff;
+}
+
+svg path{
+    fill: #00394f;
+    stroke: #eee;
+    stroke-width: .25;
+}
+
+svg path:hover{
+    fill: #006284;
+    transition: 0.6s;
+    cursor: pointer;
+}
