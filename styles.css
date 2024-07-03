@@ -94,7 +94,10 @@
         padding: 5px;
     }
 
-  
+  .video{
+  position: relative;
+  padding-bottom: 56.25%;
+  }
     .quiz-container {
         padding: 10px;
         width: 100%;
