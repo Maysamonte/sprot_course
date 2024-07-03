@@ -2,121 +2,40 @@
     box-sizing: border-box;
 }
 
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .container {
-        flex-direction: column;
-		
-    }
-
-    .lists {
-        order: 2;
-        width: 99%;
-        padding: 5px;
-    }
-	   .video-container {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
 
 
+        @media (max-width: 768px) {
+            .header-icon {
+                max-width: 100%;
+            }
 
-    .quiz-container {
-        width: 90%;
-    }
+            .lists {
+                flex-direction: column;
+            }
 
+            .course-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
 
-	
-	.map-container {
-    width: 90%;
-    padding: 10px;
-	margin: 45% auto;
-    }
-}
+            .list1,
+            .list2 {
+                margin-bottom: 20px;
+            }
 
-@media (max-width: 767px) {
-    header {
-        flex-direction: column;
-        padding: 5px;
-    }
+            .video {
+                margin-bottom: 20px;
+            }
 
-    .lists {
-        width: 97.5%;
-        padding: 5px;
-    }
-
-    .container {
-        padding: 5px;
-		width: 97.5%;
-    }
-
-    .quiz-container {
-        width: 100%;
-    }
-
-    .video-container {
-        width: 97.5%;
-        padding: 5px;
-    }
-
-    .continue-button {
-        width: 100%;
-    }
-	input[type='radio'] {
-	height: 20px;
-	width: 20px;
-	position: relative;
-}
-	.map-container{
-    width: 90%;
-    padding: 10px;
-	margin: 45% auto;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 5px;
-        flex-direction: row; 
-        align-items: center; 
-    }
-
-	header .header-icon {
-        max-height: 40px; 
-        margin-right: 0; 
-    }
-    .lists {
-        padding: 5px;
-    }
-
-.video {
-  position: relative;
-  padding-bottom: 56.25%; 
-}
-
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-    .quiz-container {
-        padding: 10px;
-        width: 100%;
-    }
+            .quiz-container,
+            .map-container {
+                margin-bottom: 20px;
+            }
+        }
 
 
-
-
-
-    .map-container {
-        width: 90%;
-        padding: 10px;
-		margin: 85% auto;
-    }
-}
 
 
   body {
