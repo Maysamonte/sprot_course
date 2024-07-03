@@ -96,29 +96,16 @@
     }
   }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .lists,
   .video,
   .quiz-container,
   .map-container {
-    display: none;
+    max-width: 50%;
+    display: inline-block;
+    vertical-align: top;
   }
-  .container {
-    padding: 10px;
-  }
-  .course-menu {
-    display: block;
-    text-align: center;
-  }
-  .list1,
-  .list2 {
-    display: block;
-  }
-  .toggle-button {
-    display: block;
-    margin: 0 auto;
-  }
-    }
+}
 
 
   body {
