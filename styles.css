@@ -14,6 +14,11 @@
         width: 99%;
         padding: 5px;
     }
+	   .video-container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
 
 
@@ -21,16 +26,7 @@
         width: 90%;
     }
 
-    .video-container {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-	.video{
-	width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-	}
+
 	
 	.map-container {
     width: 90%;
