@@ -96,51 +96,22 @@
     }
   }
 
-/* Mobile styles */
 @media (max-width: 767px) {
-
-    .header-icon {
-      max-width: 100px;
+    /* Adjust the layout for smaller screens */
+    .container {
+        display: flex;
+        flex-direction: column;
     }
-  
-
-    body {
-      padding-top: 20px;
-    }
-
     .lists {
-      width: 100%;
+        order: 2;
     }
-  
- 
-    .lists ul li {
-      font-size: 14px;
+    .video {
+        order: 1;
     }
-  
-
-    .video-container {
-      max-width: 100%;
-    }
-  
-
     .quiz-container {
-      max-width: 100%;
+        order: 3;
     }
-  
-
-    .map-container {
-      max-width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-
-    .mapButns {
-      margin: 5px;
-      font-size: 12px;
-    }
-  }
+}
 
   body {
     margin: 0;
