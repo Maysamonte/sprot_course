@@ -4,32 +4,53 @@
 
 
 
-@media (max-width: 767px) {
-    header {
-        flex-direction: column;
-        padding: 5px;
-    }
+        @media (max-width: 768px) {
+            .header-icon {
+                max-width: 100%;
+            }
 
-    .lists {
-        width: 97.5%;
-        padding: 5px;
-    }
+            .lists {
+                flex-direction: column;
+            }
 
-    container {
-        padding: 5px;
-		width: 97.5%;
-    }
+            .course-menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
 
-    .quiz-container {
-        width: 100%;
-    }
+            .list1,
+            .list2 {
+                margin-bottom: 20px;
+            }
 
-    .video-container {
-        width: 100%;
-    }
+            .video {
+                margin-bottom: 20px;
+                overflow: hidden;
+                position: relative;
+                padding-top: 56.25%; /* 16:9 aspect ratio */
+            }
 
+            .video-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
 
-}
+            video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .quiz-container,
+            .map-container {
+                margin-bottom: 20px;
+            }
+        }
 
 
 
